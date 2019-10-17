@@ -627,7 +627,8 @@ clearInterval(oInterval);
 		autoplay: <?php echo esc_attr( $hide_autoplay ); ?>,
 		timer: false,
 		preloadImage: true,
-		transition: [ <?php echo $transition; ?> ],
+		transition: "opacity 0.2s ease-in-out, margin-left 0.2s ease-in-out, margin-right 0.2s ease-in-out, padding-top 0.2s ease-in-out, visibility 0.2s ease-in-out;",
+
 		transitionDuration: <?php echo esc_attr( $duration ); ?>,
 		delay: <?php echo esc_attr( $delays ); ?>,
 		slides: slides,
