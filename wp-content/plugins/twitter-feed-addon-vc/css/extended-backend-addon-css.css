@@ -1,0 +1,71 @@
+.wpb_twitter_feed_addon.tfaddon-form-wrapper .vc_container_for_children .wpb_content_element {
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    margin-bottom: 5px;
+}
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .wpb_el_type_colorpicker.vc_wrapper-param-type-colorpicker {
+    display: inline-block;
+    width: 32%;
+    margin: 2px 2px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+@media only screen and (max-width: 640px){
+	.wpb_edit_form_elements[data-title*="Twitter Feeds"] .wpb_el_type_colorpicker.vc_wrapper-param-type-colorpicker {
+	    width: 46%;
+	    margin: 2px 2px;
+	}
+}
+@media only screen and (max-width: 425px){
+	.wpb_edit_form_elements[data-title*="Twitter Feeds"] .wpb_el_type_colorpicker.vc_wrapper-param-type-colorpicker {
+	    width: 96%;
+	    margin: 2px 2px;
+	}
+}
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .wpb_el_type_colorpicker.vc_wrapper-param-type-colorpicker .vc_color-picker .wp-picker-holder {
+    position: absolute;
+}
+
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .vc_wrapper-param-type-checkbox.vc_shortcode-param input[type="checkbox"] {
+    background: #efefef;
+    position: relative;
+    width: 65px;
+    height: 20px;
+}
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .vc_wrapper-param-type-checkbox.vc_shortcode-param input[type="checkbox"]:checked {
+    border: 1px solid #0473aa;
+}
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .vc_wrapper-param-type-checkbox.vc_shortcode-param input[type="checkbox"]:focus {
+    box-shadow: none;
+}
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .vc_wrapper-param-type-checkbox.vc_shortcode-param input[type="checkbox"]:before {
+    position: absolute;
+    content: '';
+    color: #fff;
+    font-size: 12px;
+    font-family: -webkit-body;
+    width: 62%;
+    height: 100%;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid #bcbcbc;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    transition: border-color 1s;
+}
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .vc_wrapper-param-type-checkbox.vc_shortcode-param input[type="checkbox"]:checked:before {
+    content: '';
+    position: absolute;
+    left: 45%;
+    width: 55%;
+    margin: 0;
+    border-top: 18px solid #0473aa;
+    border-left: 10px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    transition: border-color 1s;
+}
+.wpb_edit_form_elements[data-title*="Twitter Feeds"] .vc_wrapper-param-type-checkbox.vc_shortcode-param{
+    margin-bottom: 15px; 
+}

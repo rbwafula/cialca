@@ -1,0 +1,149 @@
+/**
+* Theme Name: Cialca Child
+* Description: This is a child theme of Cialca Dev.
+* Author: <a href="http://http://cialca.org">Cialca</a>
+* Template: cialca-core
+* Version: 1.0.0
+*/
+body {
+    line-height: 1.538;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Roboto", -apple-system, "Raleway", sans-serif;
+    color: #555;
+}
+.intro.index-header {
+    min-height: 30vh !important;
+    max-height: 100%;
+}
+.homepage-header1 {
+    font-size: 3.2rem !important;
+    color: #4a8b71 !important;
+    font-weight: 500 !important;
+}
+.homepage-pillars-title {
+    font-size: 2.8rem !important;
+    font-weight: 500 !important;
+    color: #4a8b71 !important;
+    padding-top:15px !important;
+    margin-bottom:0 !important;
+}
+.product-section.section.vc_custom_1568048300067 {
+    padding-top:15px;
+}
+.homepage-pillars-separator {
+    margin: 40px 0;
+}
+.homepage-footerpartners-title {
+    font-size:17px !important;
+    font-weight:500;
+    color: #4a8b71 !important;
+}
+.homepage-footerpartners-title.space {
+    padding-top:30px;
+}
+.cialca_greenbg.vc_custom_1568051148173 {
+    background: #f5f5f5 !important;
+}
+
+#top-bar__navigation a:not(.custom-btn)::after {
+    bottom: -2px !important;
+    left: 7px !important;
+}
+.products__inner > div:hover {
+    background: rgba(74,139,113,0.2) !important;
+    color:#222 !important;
+    cursor: pointer !important;
+}
+.blog--style-2 .blog__item figure::before {
+    border-color: transparent !important; /*transparent transparent transparent #fff;*/
+}
+.vc_custom_1489843180838 .news-section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+.vc_custom_1489843180838 .news-section .section-heading {
+    margin-bottom: 20px !important;
+}
+
+.intro__title {
+    font-size: 4rem !important;
+    word-spacing: 6px !important;
+    letter-spacing: 3px !important;
+}
+code {
+    display: none !important;
+}
+
+
+/* Pagination */
+.display-posts-listing.grid {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.display-posts-listing.grid .title {
+    display: block;
+}
+
+.display-posts-listing.grid img { 
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+@media (min-width: 600px) {
+    .display-posts-listing.grid {
+        grid-template-columns: repeat( 2, 1fr );
+    }
+}
+
+@media (min-width: 1024px) {
+    .display-posts-listing.grid {
+        grid-template-columns: repeat( 3, 1fr );
+    }
+}
+
+.listing-item a.title {
+    font-weight: 500;
+    word-spacing: 0px;
+    font-size: 2rem;
+    font-family: "Poppins", san-serif;
+    line-height: 1.1;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+.date {
+    line-height: 1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Poppins", san-serif;
+    display: inline;
+}
+.category-display {
+    line-height: 1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Poppins", san-serif;
+    display: inline;
+}
+.excerpt {
+    margin: 15px 0;
+    box-sizing: inherit;
+    line-height: 1.538;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: -apple-system, "Raleway", sans-serif;
+    display: block;
+}
+.display-posts-pagination {
+    margin-top: 15px;
+}
+.display-posts-pagination .screen-reader-text{
+    display: none;
+}
+.footer-text {
+    font-size: 1.4rem;
+    text-align: center;
+}

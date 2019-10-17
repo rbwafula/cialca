@@ -1,0 +1,5 @@
+<div class="tfa-tweet-actions-wrapper tfa-tweet-actions">
+    <a href="https://twitter.com/intent/tweet?in_reply_to=<?php echo $tweet->id_str; ?>" class="tfa-tweet-reply tfa-tweet-action-reply" target="_blank"><i class="fa fa-reply"></i></a>
+    <a href="https://twitter.com/intent/retweet?tweet_id=<?php echo $tweet->id_str; ?>" class="tfa-tweet-retweet tfa-tweet-action-retweet" target="_blank"><i class="fa fa-retweet"></i><span class="tfa-count"><?php echo $this->abreviateTotalCount($tweet->retweet_count);?></span></a>
+    <a href="https://twitter.com/intent/favorite?tweet_id=<?php echo $tweet->id_str; ?>" class="tfa-tweet-fav tfa-tweet-action-favourite" target="_blank"><i class="fa fa-star"></i><span class="tfa-count"><?php echo $this->abreviateTotalCount($tweet->favorite_count);?></span></a>
+</div>

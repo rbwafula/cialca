@@ -1,0 +1,41 @@
+.hide-color-picker {
+    display: inherit !important;
+}
+
+#setting-error-tgmpa, #setting-error-nt-framework {
+    display: block !important;
+}
+
+.rwmb-divider-wrapper hr {
+    border-top: 4px solid #F1F1F1 !important;
+    margin: 20px -12px 20px;
+}
+
+#poststuff .stuffbox>h3, #poststuff h2, #poststuff h3.hndle {
+    background: #0073aa;
+    color: #fff;
+}
+
+.js .postbox .handlediv {
+    display: block;
+    background: #013e5c;
+    color: #fff;
+}
+
+.rwmb-tab-panel .rwmb-thickbox_image-wrapper ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.rwmb-image-item .rwmb-media-preview {
+    width: 150px;
+    background: #eee;
+}
+
+.vc_license-activation-notice {
+    display: none !important;
+}
+
+.hide-color-picker {
+    display: inherit !important;
+}
