@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/kiricoke/public_html/cialca/
+    - /bin/cp -R wp-content/plugins $DEPLOYPATH
+    - /bin/cp -R wp-content/themes $DEPLOYPATH
+    - /bin/cp -R wp-content/upgrade $DEPLOYPATH
