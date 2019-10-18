@@ -74,6 +74,9 @@ body {
 code {
     display: none !important;
 }
+.menu-primary > li.li-btn {
+    display: none;
+}
 
 
 /* Pagination */
