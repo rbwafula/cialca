@@ -826,7 +826,7 @@ function theme_nt_agricom_section_testimonial( $atts, $content = null ) {
 
 											if ( isset( $t['tesimg'] ) !='' ){
 												$out .= '<div class="feedback__author__photo  mx-auto">';
-													$out .= ''.nt_agricom_img( $imgsrc=$t['tesimg'], $imgclass='circled  img-fluid', $imgwidth='140', $imgheight='140' ).'';
+													$out .= ''.nt_agricom_img( $imgsrc=$t['tesimg'], $imgclass='img-fluid', $imgwidth='140', $imgheight='140' ).'';
 												$out .= '</div>';
 											}
 
