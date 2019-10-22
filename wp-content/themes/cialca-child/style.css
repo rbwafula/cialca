@@ -154,6 +154,16 @@ code {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+.list-item-disc {
+    text-indent: 0px;
+    list-style: disc;
+    display: list-item;
+    margin-left: 2em;
+    font-size: 1.4rem !important;
+}
+.bold-first-line::first-line {
+    font-weight: 700;
+}
 @media only screen and (min-width: 576px) {  
 }
 @media only screen and (min-width: 768px) { 
