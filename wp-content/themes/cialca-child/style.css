@@ -165,7 +165,13 @@ p.cialca-paragraph {
     font-weight: 400;
     font-size: 1.45rem !important;
 }
-p.cialca-paragraph.bold {
+p.cialca-paragraph.title {
+    margin-bottom: 5px !important;
+}
+p.cialca-paragraph.title.normal {
+    font-weight: 500;
+}
+p.cialca-paragraph.title.bold {
     font-weight: 800;
 }
 @media only screen and (min-width: 576px) {  
