@@ -14,7 +14,8 @@ jQuery(document).ready(function($){
         Highcharts.chart('barchart', {
             colors: ['#79a8c4','#f69686'],
             chart: {
-                type: 'bar'
+                type: 'bar',
+                backgroundColor: 'transparent'
             },
             title: {
                 text: 'CIALCA Trainings'
