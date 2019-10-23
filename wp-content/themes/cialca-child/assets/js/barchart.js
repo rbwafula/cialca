@@ -42,5 +42,54 @@ jQuery(document).ready(function($){
             },
             series: data
         });
+
+        Highcharts.chart('impactchart1', {
+        colors: ['#4472C4','transparent'],
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            credits: false,
+            title: {
+                text: 'Test Chart'
+            },
+            subtitle: {
+                text: 'Alex kindly modify to your use'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: false,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.percentage:.1f} %',
+                        distance: -100,
+                           color:'white'
+                    }
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Chrome',
+                    y: 70,
+                    sliced: false,
+                    selected: true
+                }, {
+                    name: '',
+                    y: 30
+                }]
+            }]
+        });
+
+
+
+
     });
 });
