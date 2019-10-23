@@ -46,6 +46,7 @@ jQuery(document).ready(function($){
         Highcharts.chart('impactchart1', {
         colors: ['#4472C4','transparent'],
             chart: {
+                backgroundColor: 'transparent',
                 plotBackgroundColor: 'transparent',
                 plotBorderWidth: null,
                 plotShadow: false,
