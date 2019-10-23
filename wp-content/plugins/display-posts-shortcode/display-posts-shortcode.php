@@ -108,7 +108,7 @@ function be_display_posts_shortcode( $atts ) {
 			'time'                  => '',
 			'title'                 => '',
 			'wrapper'               => 'ul',
-			'wrapper_class'         => 'display-posts-listing',
+			'wrapper_class'         => 'display-posts-listing_disabled',
 			'wrapper_id'            => false,
 		),
 		$atts,
@@ -504,7 +504,7 @@ function be_display_posts_shortcode( $atts ) {
 		}
 
 		if ( $image_size && has_post_thumbnail() && $include_link ) {
-			$image = '<a class="image" href="' . get_permalink() . '">' . get_the_post_thumbnail( get_the_ID(), $image_size ) . '</a> ';
+			$image = '<figure><a class="image" href="' . get_permalink() . '">' . get_the_post_thumbnail( get_the_ID(), $image_size ) . '</a></figure>';
 
 		} elseif ( $image_size && has_post_thumbnail() ) {
 			$image = '<span class="image">' . get_the_post_thumbnail( get_the_ID(), $image_size ) . '</span> ';
@@ -518,7 +518,7 @@ function be_display_posts_shortcode( $atts ) {
 			$date = 'relative' === $date_format ? be_dps_relative_date( get_the_modified_time( 'U' ) ) : get_the_modified_date( $date_format );
 		}
 		if ( ! empty( $date ) ) {
-			$date = ' <span class="date">' . $date . '</span>';
+			$date = '<div id="metadata"><span class="date">' . $date . '</span>';
 		}
 
 		if ( $include_author ) {
@@ -578,7 +578,7 @@ function be_display_posts_shortcode( $atts ) {
 				foreach ( $terms as $term ) {
 					$term_output[] = '<a href="' . get_term_link( $term, $category_display ) . '">' . $term->name . '</a>';
 				}
-				$category_display_text = ' <span class="category-display"><span class="category-display-label">' . $category_label . '</span> ' . implode( ', ', $term_output ) . '</span>';
+				$category_display_text = ' <span class="category-display"><span class="category-display-label">' . $category_label . '</span> ' . implode( ', ', $term_output ) . '</span></div>';
 			}
 
 			/**
@@ -592,7 +592,7 @@ function be_display_posts_shortcode( $atts ) {
 
 		}
 
-		$class = array( 'listing-item','col-xs-12','col-md-6','col-lg-4','js-isotope__item' );
+		$class = array( 'list-item','col-xs-12_disabled','col-md-6_disabled','col-lg-4_disabled','js-isotope__item_disabled' );
 
 		/**
 		 * Filter the post classes for the inner wrapper element of the current post.

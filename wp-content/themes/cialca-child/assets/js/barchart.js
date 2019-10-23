@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
                 text: 'CIALCA Trainings'
             },
             xAxis: {
-                categories: ['MSc', 'PhD']
+                categories: ['Trainings', 'Internship', 'MSc', 'PhD']
             },
             yAxis: {
                 min: 0,
