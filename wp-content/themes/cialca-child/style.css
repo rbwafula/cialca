@@ -232,7 +232,7 @@ p.cialca-paragraph.title.bold {
     top: -55px;
     border-bottom: 21px solid #e9f1ee;
 }
-.our-imapact .vertical-text.impact {
+.our-impact .vertical-text {
     transform: rotate(270deg);
     transform-origin: right;
     -webkit-transform-origin: right;
