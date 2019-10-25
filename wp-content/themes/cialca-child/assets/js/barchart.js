@@ -76,7 +76,8 @@ jQuery(document).ready(function($){
                         format: '{point.percentage:.1f} %',
                         distance: -100,
                            color:'white'
-                    }
+                    },
+                    borderWidth: 0
                 }
             },
             series: [{
@@ -127,7 +128,8 @@ jQuery(document).ready(function($){
                         format: '{point.percentage:.1f} %',
                         distance: -100,
                            color:'white'
-                    }
+                    },
+                    borderWidth: 0
                 }
             },
             series: [{
@@ -178,7 +180,8 @@ jQuery(document).ready(function($){
                         format: '{point.percentage:.1f} %',
                         distance: -100,
                            color:'white'
-                    }
+                    },
+                    borderWidth: 0
                 }
             },
             series: [{
