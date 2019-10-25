@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
     $(function() {
         // Create the chart
         Highcharts.chart('impactchart1', {
-            colors: ['#4472C4','transparent'],
+            colors: ['#5472d2','transparent'],
             chart: {
                 backgroundColor: 'transparent',
                 plotBackgroundColor: 'transparent',
@@ -64,7 +64,7 @@ jQuery(document).ready(function($){
         });
 
         Highcharts.chart('impactchart2', {
-            colors: ['#4472C4','transparent'],
+            colors: ['#fe6c61','transparent'],
             chart: {
                 backgroundColor: 'transparent',
                 plotBackgroundColor: 'transparent',
@@ -116,7 +116,7 @@ jQuery(document).ready(function($){
         });
 
         Highcharts.chart('impactchart3', {
-            colors: ['#4472C4','transparent'],
+            colors: ['#6dab3c','transparent'],
             chart: {
                 backgroundColor: 'transparent',
                 plotBackgroundColor: 'transparent',
