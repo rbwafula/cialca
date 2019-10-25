@@ -30,28 +30,28 @@ add_action(  'wp_enqueue_scripts', 'ntagricom_child_enqueue_styles' );
 
 
 function load_js_assets() {
-    wp_enqueue_script( 'footerScript-custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', array(), false, true );
+    
 
     /* Page Unique Javascript */
-    if( is_page( get_page_by_title('Workstreams')->ID ) ) {
+    if ( is_page(get_page_by_title('Home')->ID) ) {
+        wp_enqueue_script( 'footerScript-custom', get_stylesheet_directory_uri() . '/assets/js/home.js', array(), false, true );
+    } elseif ( is_page(get_page_by_title('Workstreams')->ID) ) {
         wp_enqueue_script('my-jquery', 'https://code.jquery.com/jquery-1.7.2.js', array('jquery'), '', false);
         wp_enqueue_script('my-js', 'https://code.highcharts.com/maps/highmaps.js', array('jquery'), '', false);
         wp_enqueue_script('my-js2', 'https://code.highcharts.com/maps/modules/data.js', array('jquery'), '', false);
         wp_enqueue_script('my-js3', 'https://code.highcharts.com/maps/modules/exporting.js', array('jquery'), '', false);
-        wp_enqueue_script('my-js4', 'https://code.highcharts.com/maps/modules/offline-exporting.js', array('jquery'), '', false);
-        
+        wp_enqueue_script('my-js4', 'https://code.highcharts.com/maps/modules/offline-exporting.js', array('jquery'), '', false); 
         wp_enqueue_script( 'footerScript-map', get_stylesheet_directory_uri() . '/assets/js/map.js', array(), false, true );
-    }
-
-    if( is_page( get_page_by_title('Our Impact')->ID ) ) {
+    } elseif ( is_page(get_page_by_title('Our Impact 2')->ID) ) {
         wp_enqueue_script('my-jquery', 'https://code.jquery.com/jquery-1.7.2.js', array('jquery'), '', false);
         wp_enqueue_script('my-js', 'https://code.highcharts.com/highcharts.js', array('jquery'), '', false);
         wp_enqueue_script('my-js2', 'https://code.highcharts.com/maps/modules/data.js', array('jquery'), '', false);
         wp_enqueue_script('my-js3', 'https://code.highcharts.com/maps/modules/exporting.js', array('jquery'), '', false);
         wp_enqueue_script('my-js4', 'https://code.highcharts.com/maps/modules/offline-exporting.js', array('jquery'), '', false);
-        
         wp_enqueue_script( 'footerScript-barchart', get_stylesheet_directory_uri() . '/assets/js/barchart.js', array(), false, true );
-    } 
+    } else {
+        return 0;
+    }
 }
  
 add_action('wp_enqueue_scripts', 'load_js_assets');

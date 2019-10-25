@@ -205,6 +205,23 @@ p.cialca-paragraph.title.bold {
 .cialca-grid .list-item a.title:hover {
     color: #4a8b71;
 }
+.vc_custom_heading.kpi {
+    color: #4a8b71;
+    margin-bottom: 0;
+}
+.vc_custom_heading.kpi.description {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+}
+.vc_general.vc_single_bar {
+    background: #a4bcc4;
+    border-radius: 0px;
+}
+.vc_bar {
+    border-radius: 0px !important;
+}
 @media only screen and (min-width: 576px) {  
 }
 @media only screen and (min-width: 768px) { 
