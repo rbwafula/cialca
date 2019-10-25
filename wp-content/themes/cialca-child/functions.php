@@ -48,7 +48,7 @@ function load_js_assets() {
         wp_enqueue_script('my-js2', 'https://code.highcharts.com/maps/modules/data.js', array('jquery'), '', false);
         wp_enqueue_script('my-js3', 'https://code.highcharts.com/maps/modules/exporting.js', array('jquery'), '', false);
         wp_enqueue_script('my-js4', 'https://code.highcharts.com/maps/modules/offline-exporting.js', array('jquery'), '', false);
-        wp_enqueue_script( 'footerScript-barchart', get_stylesheet_directory_uri() . '/assets/js/barchart.js', array(), false, true );
+        wp_enqueue_script( 'footerScript-barchart', get_stylesheet_directory_uri() . '/assets/js/impact.js', array(), false, true );
     } elseif ( is_page(get_page_by_title('Our Impact 2')->ID) ) {
         wp_enqueue_script('my-jquery', 'https://code.jquery.com/jquery-1.7.2.js', array('jquery'), '', false);
         wp_enqueue_script('my-js', 'https://code.highcharts.com/highcharts.js', array('jquery'), '', false);
