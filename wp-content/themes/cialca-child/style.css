@@ -226,11 +226,11 @@ p.cialca-paragraph.title.bold {
     content: "";
     width: 0px;
     height: 0px;
-    border: 0.8em solid transparent;
+    border: 34px solid transparent;
     position: absolute;
     left: 50%;
-    top: -44px;
-    border-bottom: 20px solid #e9f1ee;
+    top: -55px;
+    border-bottom: 21px solid #e9f1ee;
 }
 @media only screen and (min-width: 576px) {  
 }
