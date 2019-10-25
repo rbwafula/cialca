@@ -206,21 +206,31 @@ p.cialca-paragraph.title.bold {
     color: #4a8b71;
 }
 .vc_custom_heading.kpi {
-    color: #4a8b71;
-    margin-bottom: 0;
+    color: #4a8b71 !important;
+    margin-bottom: 0 !important;
 }
 .vc_custom_heading.kpi.description {
-    margin-top: 0;
-    font-weight: 500;
-    font-size: 2.0rem;
-    margin-bottom: 10px;
+    margin-top: 0 !important;
+    font-weight: 500 !important;
+    font-size: 2.0rem !important;
+    margin-bottom: 10px !important;
 }
 .vc_general.vc_single_bar {
-    background: #a4bcc4;
-    border-radius: 0px;
+    background: #a4bcc4 !important;
+    border-radius: 0px !important;
 }
 .vc_bar {
     border-radius: 0px !important;
+}
+.top-notch::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 0.8em solid transparent;
+    position: absolute;
+    left: 50%;
+    top: -44px;
+    border-bottom: 20px solid #e9f1ee;
 }
 @media only screen and (min-width: 576px) {  
 }
